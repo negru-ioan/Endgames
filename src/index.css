@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Overpass;
+  font-weight: 900;
+  color-scheme: light dark;
+  color: white;
+  background-color: #0F1011;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  color: rgb(231, 51, 51)
+}
+.hoverAddToCart:hover{
+  color: rgb(200, 133, 229) !important
+}
+
+.shadowwwww:after {
+  display: none;
+}
+.card_max_width_365px{
+  max-width: 365px;
+}
+
+@media only screen and (max-width: 767px) {
+  .shadowwwww:after {
+    background-image: linear-gradient(180deg,transparent,#1a1a1a);
+    bottom: -32px;
+    content: "";
+    display: block;
+    height: 50px;
+    margin-top: -20px;
+    pointer-events: none;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+  }
+  
+}
+@media only screen and (max-width: 1270px){
+  .game_lg_block{
+    display: block;
+  }
+  .info_width{
+    width: 100%;
+    padding: 60px 0 0 0;
+  }
+}
+@media only screen and (min-width: 1270px){
+  .game_lg_block{
+    display: flex;
+  }
+  .info_width{
+    width: 60%
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 760px) {
+  .genre{
+    background-color: aqua !important;
+    display: none !important;
+  }
+}
